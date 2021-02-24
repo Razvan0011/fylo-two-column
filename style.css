@@ -56,6 +56,179 @@ h1, h2, h3, a, nav {
     text-decoration: underline;
 }
 
+/* Button */
+.btn {
+    padding: 13px 55px;
+    background-color: var(--bright-blue);
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.btn:focus {
+    outline: none;
+}
+.btn:hover {
+    filter: brightness(120%);
+}
+/* Form */
+form {
+    display: flex;
+    margin-top: 25px;
+}
+/* Email */
+.email {
+    width: 100%;
+    margin-right: 20px;
+    padding-left: 15px;
+}
+.email:focus {
+    outline: none;
+}
+
+/* Alert */
+.alert {
+    color: red;
+    font-size: 14px;
+    transform: translateY(-8px);
+    visibility: hidden;
+}
+
+/* Presentation */
+#presentation {
+    background-color: var(--light-grayish-blue);
+}
+
+/* Presentation content */
+#presentation-inner {
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+#presentation-inner .content {
+    /* background-color: red; */
+    max-width: 46%;
+}
+
+/* See how fylo works */
+#how-fylo-works {
+    color: var(--moderate-cyan);
+    line-height: 10px;
+    text-decoration: none;
+    border-bottom: 1px solid var(--moderate-cyan);
+    padding-bottom: 3px;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin-top: 20px;
+}
+#how-fylo-works img {
+    margin-left: 5px;
+}
+#how-fylo-works:hover {
+    filter: brightness(120%);
+}
+
+.presentation-content p{
+    margin-top: 20px;
+
+}
+
+/* Testimonial */
+.card {
+    background-color: white;
+    background-image: url("./img/icon-quotes.svg");
+    background-repeat: no-repeat;
+    background-size: 5%;
+    background-position: 30px 30px;
+    padding: 50px 30px 30px 30px;
+    width: 68%;
+    /* offset-x | offset-y | blur-radius | spread-radius | color */
+    box-shadow: 3px 2px 20px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+.card p {
+    font-size: 13px;
+    line-height: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.profile {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+}
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.name {
+    display: flex;
+    flex-direction: column;
+}
+.name p {
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 15px;
+}
+.name label {
+    font-size: 10px;
+}
+
+/* Get access */
+#get-access {
+    background: var(--desaturated-blue);
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+/* Get access inner content */
+#get-access-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--light-gray);
+}
+#get-access-inner h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+#get-access-inner form{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+#get-access-inner .email {
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+#get-access-inner form .alert {
+    color: var(--light-gray);
+    margin-top: 7px;
+}
+
+/* Footer */
+footer {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background: var(--very-dark-blue);
+    color: var(--light-gray);
+}
+/* Footer logo */
+#footer-logo {
+    filter: invert(100%) sepia(27%) saturate(27%) hue-rotate(67deg) brightness(907%) contrast(106%);
+}
+
 /* Desktop */ 
 @media screen and (min-width: 861px) {
     /* Container */
@@ -63,4 +236,46 @@ h1, h2, h3, a, nav {
         max-width: 1200px;
         margin: auto;
     }
+
+    /* Showcase */
+    #showcase {
+        background: url("./img/bg-curve-desktop.svg");
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: 100%;
+        padding-top: 90px;
+        padding-bottom: 240px;
+    }
+    #showcase-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+    }
+    /* Image */
+    .image {
+        max-width: 50%;
+    }
+    /* Content */
+    .content {
+        /* background-color: chocolate; */
+        max-width: 40%;
+    }
+    .content h1 {
+        line-height: 45px;
+    }
+    .margin-top {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    /* Presentation */
+    #presentation {
+        padding-top: 50px;
+        padding-bottom: 90px;
+    }
+
+    .card {
+        margin-top: 50px;
+    }
+    
 }
